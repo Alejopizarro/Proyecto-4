@@ -5,23 +5,23 @@ spring:
         - id: auth-route
           uri: http://localhost:8080
           predicates:
-            -Path=/v1/auth/**
+            - Path=/v1/auth/**
         - id: users-route
           uri: http://localhost:8081
           predicates:
-            -Path=/v1/user**
+            - Path=/v1/user**
           filters:
             - name: AuthenticationFilter
         - id: games-route
           uri: http://localhost:8082
           predicates:
-            -Path=/v1/game/**
+            - Path=/v1/game/**
           filters:
               - name: AuthenticationFilter
         - id: eligibility-route
           uri: http://localhost:8085
           predicates:
-            -Path=/v1/eligibility/**
+            - Path=/v1/eligibility/**
       endpoints:
         web:
           exposure:

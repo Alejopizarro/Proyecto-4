@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="auth-service" />
         <module name="eligibility-microservice" />
+        <module name="user-service" />
         <module name="game-service" />
         <module name="gateway-service" />
       </profile>
@@ -23,6 +24,7 @@
       <module name="eligibility-microservice" options="-parameters" />
       <module name="game-service" options="-parameters" />
       <module name="gateway-service" options="-parameters" />
+      <module name="user-service" options="-parameters" />
     </option>
   </component>
 </project>

@@ -1,13 +1,15 @@
 server:
-  port: 8080
+  port: 8082
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/proyecto4
     username: postgres
     password: 1234
-    jpa:
-      hibernate:
-        ddl-auto: update
+  jpa:
+    hibernate:
+      ddl-auto: update
+jwt:
+  secret: "dkfslajadfskljasdjlkj2l34kj3kl2j3lk2jkl23jkl3jk2lkjlkjjkljkljklkj345jlk23l4l34klj23lk4jl2k23l"
 
 cloud:
   function:

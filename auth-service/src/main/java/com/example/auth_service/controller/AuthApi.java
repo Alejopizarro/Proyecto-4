@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @RequestMapping(ApiPathConstants.V1_ROUTE + ApiPathConstants.AUTH_ROUTE)
 public interface AuthApi {
-    @PostMapping(value = "/create")
+    @PostMapping(value = "/register")
     ResponseEntity<TokenResponse> createUser(
             @RequestBody @Valid UserRequest userRequest
             );
