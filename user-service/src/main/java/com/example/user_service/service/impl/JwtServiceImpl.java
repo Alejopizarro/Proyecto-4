@@ -4,9 +4,11 @@ import com.example.user_service.service.JwtService;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Service;
 
 import java.util.Date;
 
+@Service
 public class JwtServiceImpl implements JwtService {
     private final String secretKey;
 
@@ -34,9 +36,9 @@ public class JwtServiceImpl implements JwtService {
     }
 
     @Override
-    public String extractUserId(String token) {
+    public Integer extractUserId(String token) {
         try {
-            return getClaims(token).getSubject();
+            return Integer.parseInt(getClaims(token).getSubject());
         } catch (Exception e) {
             return null;
         }

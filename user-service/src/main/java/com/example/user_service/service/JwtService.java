@@ -5,5 +5,5 @@ import io.jsonwebtoken.Claims;
 public interface JwtService {
     Claims getClaims(String token);
     boolean isExpired(String token);
-    String extractUserId(String token);
+    Integer extractUserId(String token);
 }

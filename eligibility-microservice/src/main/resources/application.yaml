@@ -16,11 +16,11 @@ cloud:
   stream:
     default-binder: kafka.default
     bindings:
-      game@inding-in.0:
+      game-binding-in.0:
         destination: event.game-created
         binder: kafka_default
         useNativeDecoding: true
-      game@inding-out-0:
+      game-binding-out-0:
         destination: event.game-eligible
         binder: kafka_default
         useNativeDecoding: true
@@ -38,7 +38,7 @@ cloud:
                         session.timeout.ms: 10000
                         max.poll.records: 10
                     producer:
-                      compressionType: grip
+                      compressionType: gzip
                       configuration:
                         max.request.size: 10000
                   binder:

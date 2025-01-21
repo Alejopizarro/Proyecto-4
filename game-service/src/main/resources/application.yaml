@@ -15,9 +15,9 @@ cloud:
   function:
     definition:
   stream:
-    default-binder: kafka.default
+    default-binder: kafka_default
     bindings:
-      game@inding-out-0:
+      game-binding-out-0:
         destination: event.game-created
         binder: kafka_default
         useNativeDecoding: true
@@ -35,7 +35,7 @@ cloud:
                         session.timeout.ms: 10000
                         max.poll.records: 10
                     producer:
-                      compressionType: grip
+                      compressionType: gzip
                       configuration:
                         max.request.size: 10000
                   binder:

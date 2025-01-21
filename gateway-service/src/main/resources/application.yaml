@@ -9,7 +9,7 @@ spring:
         - id: users-route
           uri: http://localhost:8081
           predicates:
-            - Path=/v1/user**
+            - Path=/v1/user/**
           filters:
             - name: AuthenticationFilter
         - id: games-route
