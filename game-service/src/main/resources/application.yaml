@@ -17,7 +17,7 @@ cloud:
   stream:
     default-binder: kafka_default
     bindings:
-      game-binding-out-0:
+      gameBinding-out-0:
         destination: event.game-created
         binder: kafka_default
         useNativeDecoding: true
