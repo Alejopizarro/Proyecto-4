@@ -12,7 +12,7 @@ spring:
 
 cloud:
   function:
-    definition: gameCreatedBinding
+    definition: gameCreatedBindin
   stream:
     default-binder: kafka_default
     bindings:
