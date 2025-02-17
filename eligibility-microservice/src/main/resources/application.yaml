@@ -48,4 +48,4 @@ cloud:
                     minPartitionCount: 3
                     replicationFactor: 1
                     serdeError: logAndContinue
-                    broker: localhost:9092
+                    brokers: localhost:9092
